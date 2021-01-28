@@ -1,0 +1,24 @@
+.btn,
+.jumbotron,
+.nav :hover {
+  border-radius: 0px;
+}
+
+body {
+  background: #343a40;
+  /* overflow: hidden;  */
+  font-family: "Source Sans Pro", sans-serif;
+}
+.btn-outline-light {
+  margin-top: 11px;
+}
+.fa {
+  margin-right: 27px;
+}
+
+/* footer {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+} */
