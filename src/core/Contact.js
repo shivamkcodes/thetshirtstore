@@ -44,7 +44,8 @@ const Contact = () => {
             className="alert alert-success"
             style={{ display: success ? "" : "none" }}
           >
-            request send successfully
+            request send successfully...
+            <Link to="/">go to home</Link>
           </div>
         </div>
       </div>

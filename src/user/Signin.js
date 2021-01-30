@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Base from "../core/Base";
 
-import { Redirect } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 
 import { signin, authenticate, isAuthenticated } from "../auth/helper";
 
@@ -62,8 +62,17 @@ const Signin = () => {
   const loadingMessage = () => {
     return (
       loading && (
-        <div className="alert alert-info">
-          <h2>loading...</h2>
+        <div className="row">
+          <div className="col-md-6 offset-sm-3 text-left">
+            <div className="alert alert-info">
+              <h2>
+                Working on it...
+                <div class="spinner-border" role="status">
+                  <span class="visually-hidden"></span>
+                </div>
+              </h2>
+            </div>
+          </div>
         </div>
       )
     );
@@ -109,6 +118,10 @@ const Signin = () => {
             <button onClick={onSubmit} className="btn btn-success btn-block">
               submit
             </button>
+
+            <p className="lead text-center mt-3">
+              Need an Account ? <Link to="/signup">Sign Up</Link>
+            </p>
           </form>
         </div>
       </div>

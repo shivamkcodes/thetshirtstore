@@ -51,8 +51,17 @@ const Signup = () => {
   const loadingMessage = () => {
     return (
       loading && (
-        <div className="alert alert-info">
-          <h2>loading...</h2>
+        <div className="row">
+          <div className="col-md-6 offset-sm-3 text-left">
+            <div className="alert alert-info">
+              <h2>
+                Working on it...
+                <div class="spinner-border" role="status">
+                  <span class="visually-hidden"></span>
+                </div>
+              </h2>
+            </div>
+          </div>
         </div>
       )
     );
