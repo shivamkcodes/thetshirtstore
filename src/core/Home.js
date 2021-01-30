@@ -4,7 +4,7 @@ import "../styles.css";
 import { API } from "../backend";
 import Base from "./Base";
 import Card from "./Card";
-import { getProducts } from "./helper/coreapicalls";
+import { cartEnter, getProducts } from "./helper/coreapicalls";
 
 export default function Home() {
   const [products, setProducts] = useState([]);
@@ -24,6 +24,7 @@ export default function Home() {
 
   useEffect(() => {
     loadAllProduct();
+    cartEnter();
   }, []);
 
   // console.log('api is',API);
