@@ -1,7 +1,7 @@
 const { API } = require("../../backend");
 
 export const createContact = (userId, token, query) => {
-  console.log(query);
+  // console.log(query);
 
   return fetch(`${API}/contact/create/${userId}`, {
     method: "POST",
@@ -13,7 +13,7 @@ export const createContact = (userId, token, query) => {
     body: JSON.stringify(query.values),
   })
     .then((Response) => {
-      console.log(Response);
+      // console.log(Response);
 
       return Response.json();
     })

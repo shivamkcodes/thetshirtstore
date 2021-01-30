@@ -17,7 +17,7 @@ export default function Home() {
         setError(true);
       } else {
         setProducts(data);
-        console.log(products);
+        // console.log(products);
       }
     });
   };

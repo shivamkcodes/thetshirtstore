@@ -40,7 +40,7 @@ const Signin = () => {
           });
         }
       })
-      .catch(console.log("signin request failed"));
+      .catch(console.log(""));
   };
 
   const performRedirect = () => {

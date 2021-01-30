@@ -30,7 +30,6 @@ const Contact = () => {
             style={{ display: error ? "" : "none" }}
           >
             There is a error
-            {/* <Link to="/signin">Login here</Link> */}
           </div>
         </div>
       </div>
@@ -54,8 +53,6 @@ const Contact = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    // setError("");
-    // setSuccess(false)
 
     createContact(user._id, token, { values })
       .then((data) => {
@@ -64,9 +61,8 @@ const Contact = () => {
           // setValues(...values,error=true)
           setValues({ ...values, error: true });
         } else {
-          console.log("success");
+          // console.log("success");
 
-          // setValues(...values,error=false,name="",email="",query="");
           setValues({
             ...values,
             error: false,
@@ -75,10 +71,6 @@ const Contact = () => {
             email: "",
             query: "",
           });
-
-          // setError("")
-          // setSuccess(true)
-          // setName("")
         }
       })
       .catch((err) => console.log(err));
