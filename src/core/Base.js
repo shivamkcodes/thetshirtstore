@@ -81,7 +81,8 @@ const Base = ({
       </div>
       <div className="container">
         <span className="text-muted">
-          An Amazing <span className="text-white">MERN</span> Bootcamp by hitesh
+          &#169; 2020-2021{" "}
+          <span className="text-white">mytshirtstore.netlify.app</span>
         </span>
       </div>
     </footer>
