@@ -81,8 +81,9 @@ const Base = ({
       </div>
       <div className="container">
         <span className="text-muted">
-          &#169; 2020-2021{" "}
-          <span className="text-white">mytshirtstore.netlify.app</span>
+          <span className="text-white">
+            &#169; 2020-2021 mytshirtstore.netlify.app
+          </span>
         </span>
       </div>
     </footer>
